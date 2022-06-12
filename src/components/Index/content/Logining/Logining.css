@@ -1,0 +1,25 @@
+.card {
+    width: 30%;
+    margin: 0 auto !important;
+}
+
+.box {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.btn1 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn2 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn3 {
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,15 @@
+.upload {
+    float: right;
+}
+
+.picture {
+    width: 200px;
+    height: 200px;
+    margin: 0 100px;
+
+}
+
+.hezi {
+    width: 50%;
+    margin: 0 auto;
+}
