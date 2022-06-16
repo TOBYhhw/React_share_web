@@ -92,6 +92,10 @@ export default class ResourcePage extends Component {
                         inputval2: "",
                         inputval3: ""
                     })
+                    this.getdata();
+                    this.setState({
+                        isModalVisible2: false
+                    })
                 }
                 else {
                     message.error("创建失败")
