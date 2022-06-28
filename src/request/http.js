@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function myAxios(axiosConfig) {
+export function myAxios(axiosConfig) {
     const service = axios.create({
         baseURL: "/api", // 设置统一的请求前缀
         timeout: 10000 // 设置统一的超时时长
@@ -21,4 +21,4 @@ export function myAxios2(axiosConfig) {
     return service(axiosConfig);
 }
 
-export default myAxios;
+

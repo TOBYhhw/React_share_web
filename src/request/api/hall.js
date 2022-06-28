@@ -1,4 +1,4 @@
-import myAxios from "../http";
+import { myAxios } from "../http";
 import { myAxios2 } from "../http";
 
 
