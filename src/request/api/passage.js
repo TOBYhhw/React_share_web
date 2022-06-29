@@ -37,6 +37,13 @@ export function apiCreateComment(data) {
         params: data,
     });
 }
+export function apiCreateAdminComment(data) {
+    return myAxios2({
+        url: "/admin/createComment?",
+        method: "post",
+        params: data,
+    });
+}
 export function apiUploadResource(data) {
     return myAxios2({
         url: "/admin/uploadResources?",

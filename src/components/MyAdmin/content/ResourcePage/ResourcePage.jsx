@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Breadcrumb, Table, Card, message, Button, Popconfirm, Modal, Divider, Input, Upload } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-import { apiGetPassage, apiUploadImg, apiRemoveResource, apiDownResource, apiRemovePassage, apiGetPassageResource, apiCreatePassage, apiCreateComment, apiUploadResource, apiRemoveComment, apiGetFileCount } from "../../../../request/api/passage"
+import { apiGetPassage, apiUploadImg, apiRemoveResource, apiDownResource, apiRemovePassage, apiGetPassageResource, apiCreatePassage, apiCreateAdminComment, apiUploadResource, apiRemoveComment, apiGetFileCount } from "../../../../request/api/passage"
 import "./ResourcePage.css"
 
 const { TextArea } = Input;
@@ -47,9 +47,8 @@ export default class ResourcePage extends Component {
             const data = {
                 content: this.state.inputval,
                 passageID: this.state.passageResource[0].id,
-                userID: window.sessionStorage.getItem("userID")
             }
-            apiCreateComment(data).then((res) => {
+            apiCreateAdminComment(data).then((res) => {
                 console.log(res);
                 if (res.status === 200) {
                     message.success("评论成功！")
