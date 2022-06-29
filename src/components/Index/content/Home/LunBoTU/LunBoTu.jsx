@@ -11,16 +11,16 @@ export default class LunBoTu extends Component {
         return (
             <Carousel autoplay>
                 <div>
-                    <img src={imgURL1} alt="" width="100%" height="600px" />
+                    <img src={imgURL1} alt="" width="100%" height="400px" />
                 </div>
                 <div>
-                    <img src={imgURL2} alt="" width="100%" height="600px" />
+                    <img src={imgURL2} alt="" width="100%" height="400px" />
                 </div>
                 <div>
-                    <img src={imgURL3} alt="" width="100%" height="600px" />
+                    <img src={imgURL3} alt="" width="100%" height="400px" />
                 </div>
                 <div>
-                    <img src={imgURL4} alt="" width="100%" height="600px" />
+                    <img src={imgURL4} alt="" width="100%" height="400px" />
                 </div>
             </Carousel>
         )
